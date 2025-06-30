@@ -1,64 +1,66 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Moje Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Portfolio – Analityk Danych</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header class="site-header">
-    <nav class="nav">
-      <a href="#projects" class="nav__item">Projekty</a>
-      <a href="#blog" class="nav__item">Blog</a>
-    </nav>
-    <h1 class="site-title">Moje Portfolio</h1>
-  </header>
-
-  <main>
-
-    <!-- Sekcja Projektów -->
-    <section id="projects" class="section">
-      <h2 class="section-title">Projekty</h2>
-      <div class="grid">
-        <!-- Powiel ten blok dla każdego projektu -->
-        <article class="card">
-          <h3 class="card__title">Nazwa Projektu</h3>
-          <p class="card__desc">
-            Krótki opis projektu — technologia, cel, wyzwania.
-          </p>
-          <a href="https://github.com/twoje-konto/twoj-projekt" class="card__link" target="_blank" rel="noopener">
-            Więcej →  
-          </a>
-        </article>
-        <!-- / powtórz -->
-      </div>
+    <header>
+        <nav>
+            <span class="logo">Twoje Portfolio</span>
+            <ul>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#projects">Projekty</a></li>
+                <li><a href="#skills">Umiejętności</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <img src="avatar.png" alt="Twoje zdjęcie" class="avatar">
+            <h1>Cześć! Jestem [Twoje Imię]</h1>
+            <p>Początkujący analityk danych. Szukam pierwszej pracy w IT.</p>
+        </div>
     </section>
-
-    <!-- Sekcja Blog -->
-    <section id="blog" class="section">
-      <h2 class="section-title">Blog</h2>
-      <div class="blog-list">
-        <!-- Powiel ten blok dla każdego wpisu -->
-        <article class="post">
-          <h3 class="post__title">Tytuł Wpisu</h3>
-          <time datetime="2025-06-15" class="post__date">15 czerwca 2025</time>
-          <p class="post__excerpt">
-            Wprowadzenie do wpisu — zarys tematu i wniosek zachęcający do czytania dalej.
-          </p>
-          <a href="blog/wpis1.html" class="post__link">Czytaj dalej →</a>
-        </article>
-        <!-- / powtórz -->
-      </div>
+    <section id="about" class="about">
+        <h2>O mnie</h2>
+        <p>
+            Jestem absolwentem/absolwentką [kierunek studiów], interesuję się analizą danych. Znam podstawy Excela, SQL oraz narzędzi do wizualizacji danych. Chcę rozwijać się jako analityk danych i zdobywać doświadczenie w IT.
+        </p>
     </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <p>© 2025 Twoje Imię i Nazwisko</p>
-  </footer>
-
+    <section id="projects" class="projects">
+        <h2>Projekty</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Tytuł projektu</h3>
+                <p>Opis projektu. Tutaj później dodasz konkretne prace studenckie lub własne analizy.</p>
+            </div>
+            <!-- Dodaj kolejne projekty tutaj -->
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <h2>Umiejętności</h2>
+        <ul>
+            <li>Excel (analiza danych, tabele przestawne)</li>
+            <li>Podstawy SQL</li>
+            <li>Power BI / Tableau (podstawy)</li>
+            <li>Podstawy Pythona (pandas, matplotlib)</li>
+            <li>Wizualizacja danych</li>
+        </ul>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Kontakt</h2>
+        <ul>
+            <li>Email: <a href="mailto:twojemail@email.com">twojemail@email.com</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/twojprofil" target="_blank">twój profil</a></li>
+            <!-- Możesz dodać GitHub lub inne -->
+        </ul>
+    </section>
+    <footer>
+        © 2025 [Twoje Imię] – Portfolio Analityk Danych
+    </footer>
 </body>
 </html>
