@@ -2,65 +2,373 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio – Damian Szewczak</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[TWOJE IMIĘ I NAZWISKO] - Portfolio Data Science</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <span class="logo">Damian Szewczak</span>
-            <ul>
-                <li><a href="#about">O mnie</a></li>
-                <li><a href="#projects">Projekty</a></li>
-                <li><a href="#skills">Umiejętności</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="hero">
-        <div class="hero-content">
-            <img src="avatar.png" alt="Twoje zdjęcie" class="avatar">
-            <h1>Cześć! Jestem Damian</h1>
-            <p>Początkujący analityk danych. Szukam pierwszej pracy w IT.</p>
-        </div>
-    </section>
-    <section id="about" class="about">
-        <h2>O mnie</h2>
-        <p>
-            Jestem absolwentem, interesuję się analizą danych. Znam podstawy Excela, SQL oraz narzędzi do wizualizacji danych. Chcę rozwijać się jako analityk danych i zdobywać doświadczenie w IT.
-        </p>
-    </section>
-    <section id="projects" class="projects">
-        <h2>Projekty</h2>
-        <div class="project-list">
-            <div class="project">
-                <h3>Tytuł projektu</h3>
-                <p>Opis projektu. Tutaj później dodasz konkretne prace studenckie lub własne analizy.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">[TWOJE INICJAŁY]</a>
             </div>
-            <!-- Dodaj kolejne projekty tutaj -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Start</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">O mnie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Umiejętności</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projekty</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Kontakt</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="typing-text">[Twoje Imię i Nazwisko]</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    Przyszły <span class="highlight">[Data Scientist / Analityk Danych]</span>
+                </h2>
+                <p class="hero-description">
+                    Student poszukujący pierwszej pracy w IT. Pasjonat analizy danych, 
+                    uczenia maszynowego i odkrywania insights ukrytych w danych.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">Zobacz Projekty</a>
+                    <a href="#contact" class="btn-secondary">Kontakt</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
         </div>
     </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O mnie</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Cześć! 👋</h3>
+                    <p>
+                        Jestem studentem [kierunek studiów] na [nazwa uczelni]. 
+                        Fascynuje mnie świat danych i możliwości, jakie dają w rozwiązywaniu 
+                        rzeczywistych problemów biznesowych.
+                    </p>
+                    <p>
+                        Choć dopiero zaczynam swoją przygodę z analizą danych, 
+                        jestem bardzo zmotywowany do nauki i rozwoju. W wolnym czasie 
+                        pracuję nad projektami, które pomagają mi zrozumieć złożoność 
+                        pracy z danymi.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Student [rok studiów]</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Pasjonat Data Science</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>Uczę się programowania</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user"></i>
+                        <p>Miejsce na Twoje zdjęcie</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
     <section id="skills" class="skills">
-        <h2>Umiejętności</h2>
-        <ul>
-            <li>Excel (analiza danych, tabele przestawne)</li>
-            <li>Podstawy SQL</li>
-            <li>Power BI (podstawy)</li>
-            <li>Podstawy Pythona (pandas, matplotlib)</li>
-            <li>Wizualizacja danych</li>
-        </ul>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Umiejętności</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Technologie, które poznaję i używam w projektach</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programowanie</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">R</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-bar"></i> Analiza Danych</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Pandas</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NumPy</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Matplotlib/Seaborn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="55%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Scikit-learn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="45%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TensorFlow/Keras</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="30%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Narzędzia</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Jupyter Notebook</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git/GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Excel</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Moje Projekty</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Projekty, które pokazują moje umiejętności w analizie danych</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>[Nazwa Projektu 1]</h3>
+                        <p>Opis projektu - analiza danych, zastosowane technologie, główne wnioski i wyniki.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Matplotlib</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>[Nazwa Projektu 2]</h3>
+                        <p>Opis projektu machine learning - problem, rozwiązanie, model, wyniki.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">Jupyter</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Notebook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>[Nazwa Projektu 3]</h3>
+                        <p>Opis projektu z bazami danych - zapytania SQL, analiza, wizualizacje.</p>
+                        <div class="project-tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Seaborn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-file-alt"></i> Raport
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Kontakt</h2>
-        <ul>
-            <li>Email: <a href="mailto:twojemail@email.com">damianszewczak1@gmail.com</a></li>
-            <li>LinkedIn: <a href="https://linkedin.com/in/twojprofil" target="_blank">twój profil</a></li>
-            <!-- Możesz dodać GitHub lub inne -->
-        </ul>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Kontakt</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Zapraszam do kontaktu w sprawie współpracy!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>[twoj.email@example.com]</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>[linkedin.com/in/twoj-profil]</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>[github.com/twoj-username]</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Lokalizacja</h4>
+                            <p>[Twoje miasto, Polska]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Imię i nazwisko" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Temat">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Wiadomość" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Wyślij wiadomość</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
-        © 2025 Damian Szewczak – Portfolio 
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 [Twoje Imię i Nazwisko]. Wszystkie prawa zastrzeżone.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
